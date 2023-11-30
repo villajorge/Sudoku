@@ -30,7 +30,7 @@ board.get("row9")[6-8] -> board.get("row")[6-8] -> board.get("row")[6-8] -> is u
 '''
 
 
-board = {
+BOARD = {
 		"row1" : [1,2,3,4,5,6,7,8,9],
 		"row2" : [1,2,3,4,5,6,7,8,9],
 		"row3" : [1,2,3,4,5,6,7,8,9],
@@ -46,7 +46,7 @@ def print_game(board):
 		output = str(v[0])
 		for i in range(1,len(v)):
 			output +='|'+str(v[i])
-		print(output)
+		return(output)
 
 
 def is_vert(board):
@@ -119,5 +119,5 @@ def is_mini(board):
 # print_game(board)
 # print(is_horizontal(board))
 # print(is_vert(board))
-print(is_mini(board))
+print(is_mini(BOARD))
 
